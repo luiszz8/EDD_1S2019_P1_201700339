@@ -17,8 +17,9 @@ class usuarios:
             node.ant = self.fin
             node.sig = self.inicio
             self.fin = node
+            self.inicio.ant = self.fin
 
-    
+
 
     def print_list(self):
         if self.inicio is None:  # verify if our CircularLinkedList is empty
@@ -31,8 +32,3 @@ class usuarios:
                 print(temp.nombre)  # -as we go
                 temp = temp.sig
 
-lista = usuarios()
-lista.agregar(NodoU("Juan"))
-lista.agregar(NodoU("Jua"))
-lista.agregar(NodoU("Ju"))
-lista.print_list()

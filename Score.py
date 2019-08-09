@@ -12,17 +12,21 @@ class Score:
     def agregar(self, node):
         if self.cima is None:
             self.cima = node
+            self.tam = self.tam +1
         else:
             node.sig = self.cima
             self.cima = node
+            self.tam = self.tam + 1
 
     def eliminar(self):
         if self.cima is None:
             return
         elif self.cima.sig is None:
             self.cima = None
+            self.tam = self.tam - 1
         else:
             self.cima = self.cima.sig
+            self.tam = self.tam - 1
 
     def tamnyo(self):
         return self.tam
@@ -36,15 +40,3 @@ class Score:
                 print(temp.x)  # -as we go
                 temp = temp.sig
 
-lista = Score()
-lista.agregar(NodoSc(1,2))
-lista.agregar(NodoSc(4,2))
-lista.agregar(NodoSc(5,2))
-lista.eliminar()
-lista.eliminar()
-lista.agregar(NodoSc(6,2))
-lista.eliminar()
-lista.eliminar()
-lista.eliminar()
-lista.eliminar()
-lista.print_list()

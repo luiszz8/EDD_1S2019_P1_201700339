@@ -8,19 +8,41 @@ class Serpiente:
     def __init__(self):
         self.inici = None
         self.fin = None
+        self.tam = 0
+        self.agregarFinal(NodoS(7, 5))
+        self.agregarFinal(NodoS(6, 5))
+        self.agregarFinal(NodoS(5, 5))
+
+
+    def agregarInicio(self, node):
+        if self.fin is None:
+            self.fin = node
+            self.inici = node
+            self.tam = self.tam+1
+        else:
+            self.fin.sig = node
+            node.ant = self.fin
+            node.sig = self.inici
+            self.inici.ant = node
+            self.inici = node
+            self.tam = self.tam + 1
 
     def agregarFinal(self, node):
         if self.fin is None:
             self.fin = node
             self.inici = node
+            self.tam = self.tam + 1
         else:
             self.fin.sig = node
             node.ant = self.fin
             self.fin = node
+            self.tam = self.tam + 1
 
     def eliminarFinal(self):
-        self.fin.ant.sig = None
-        self.fin = self.fin.ant
+        if self.tam >= 3:
+            self.fin.ant.sig = None
+            self.fin = self.fin.ant
+            self.tam = self.tam - 1
 
 
     def print_list(self):
@@ -33,11 +55,3 @@ class Serpiente:
                 temp = temp.sig
 
 
-lista = Serpiente()
-lista.agregarFinal(NodoS(1,2))
-lista.agregarFinal(NodoS(4,2))
-lista.agregarFinal(NodoS(5,2))
-lista.eliminarFinal()
-lista.agregarFinal(NodoS(7,2))
-lista.agregarFinal(NodoS(8,2))
-lista.print_list()

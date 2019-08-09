@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="297b6a61-f3e7-4fc6-9bf4-034adfc3d992" name="Default Changelist" comment="" />
+    <list default="true" id="297b6a61-f3e7-4fc6-9bf4-034adfc3d992" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Score.py" beforeDir="false" afterPath="$PROJECT_DIR$/Score.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Serpiente.py" beforeDir="false" afterPath="$PROJECT_DIR$/Serpiente.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usuarios.py" beforeDir="false" afterPath="$PROJECT_DIR$/usuarios.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,7 +20,14 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1Ovs7oWVJlrvXpckgtRbcnrc1tf" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -28,7 +40,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.usuarios">
+  <component name="RunManager" selected="Python.ventana">
     <configuration name="Board" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Practica1" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -92,27 +104,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Serpiente" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Practica1" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Serpiente" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="usuarios" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Practica1" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -134,13 +125,41 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="ventana" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Practica1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ventana.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="true" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.Board" />
+      <item itemvalue="Python.Score" />
+      <item itemvalue="Python.Serpiente (1)" />
+      <item itemvalue="Python.usuarios" />
+      <item itemvalue="Python.ventana" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.ventana" />
         <item itemvalue="Python.usuarios" />
         <item itemvalue="Python.Board" />
         <item itemvalue="Python.Score" />
         <item itemvalue="Python.Serpiente (1)" />
-        <item itemvalue="Python.Serpiente" />
       </list>
     </recent_temporary>
   </component>
@@ -156,5 +175,18 @@
       <updated>1564869240832</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
