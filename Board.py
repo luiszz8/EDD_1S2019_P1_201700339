@@ -1,3 +1,6 @@
+import os
+
+
 class NodoB:
     def __init__(self, nombre, puntaje):
         self.nombre = nombre
@@ -6,11 +9,14 @@ class NodoB:
 
 class Board:
     def __init__(self):
-         self.inicio = None
-         self.fin = None
-         self.tam = 0
+        self.inicio = None
+        self.fin = None
+        self.tam = 0
+
 
     def insertar(self, node):
+        if self.tam == 10:
+            self.eliminar()
         if self.inicio is None:
             self.inicio = node
         else:
@@ -27,6 +33,7 @@ class Board:
             self.inicio = None
         else:
             self.inicio = self.inicio.sig
+        self.tam = self.tam - 1
 
     def tamanyo(self):
         return self.tam
@@ -40,13 +47,28 @@ class Board:
                 print(temp.nombre)  # -as we go
                 temp = temp.sig
 
-lista = Board()
-lista.insertar(NodoB("Luis", 2))
-lista.insertar(NodoB("L", 2))
-lista.insertar(NodoB("Lis", 2))
-lista.eliminar()
-lista.eliminar()
-lista.insertar(NodoB("Lisa", 2))
-lista.print_list()
+
+    def graficar(self):
+        pun1=0
+        pun2=1
+        actual = self.inicio
+        datos = "digraph G {\n"
+        datos = datos + "node[shape = record, width = 2.3, height = 0.6];\n"
+        datos = datos + "rankdir = LR;\n"
+        while actual is not None:
+            datos = datos + "nodo" +str(pun1) + "[label=\"" + actual.nombre + "," + str(actual.puntaje) + "\"];\n"
+            if actual.sig is not None:
+                datos = datos + "nodo" +str(pun1) + "->nodo"+str(pun2) + "\n"
+                pun1 = pun1 + 1
+                pun2 = pun2 + 1
+            actual = actual.sig
+        datos = datos + "nodof [label=\" null  \"];\n"
+        datos = datos + "nodo" + str(pun1) + " -> nodof \n"
+        datos = datos + "}"
+        f = open("otro2.dot", "w")
+        f.write(datos)
+        f.close()
+        os.system("dot -Tjpg otro2.dot -o board.jpg")
+        os.system("board.jpg")
 
 

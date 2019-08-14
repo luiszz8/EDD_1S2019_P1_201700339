@@ -1,0 +1,11 @@
+digraph G {
+node[shape = record, width = 2.3, height = 0.6];
+rankdir = LR;
+nodo0[label="hugo 
+,2"];
+nodo0->nodo1
+nodo1[label="Jorge 
+,1"];
+nodof [label=" null  "];
+nodo1 -> nodof 
+}

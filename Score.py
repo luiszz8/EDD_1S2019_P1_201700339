@@ -1,3 +1,6 @@
+import os
+
+
 class NodoSc:
     def __init__(self, x, y):
         self.x = x
@@ -39,4 +42,20 @@ class Score:
             while temp is not None:  # iterate our list printing each element-
                 print(temp.x)  # -as we go
                 temp = temp.sig
+
+    def graficar(self):
+        tem = self.cima
+        datos = "digraph G { \n"
+        datos = datos + "node [shape=record]; \n"
+        #datos = datos + "rankdir=LR \n"
+        datos = datos + "node1[label = \"{ null "
+        while tem is not None:
+            datos = datos + "| " + str(tem.x) + "," + str(tem.y)
+            tem = tem.sig
+        datos = datos + "}\"] \n}]"
+        f = open("otro1.dot", "w")
+        f.write(datos)
+        f.close()
+        os.system("dot -Tjpg otro1.dot -o score.jpg")
+        os.system("score.jpg")
 

@@ -3,9 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="297b6a61-f3e7-4fc6-9bf4-034adfc3d992" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Board.py" beforeDir="false" afterPath="$PROJECT_DIR$/Board.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Score.py" beforeDir="false" afterPath="$PROJECT_DIR$/Score.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Serpiente.py" beforeDir="false" afterPath="$PROJECT_DIR$/Serpiente.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/usuarios.py" beforeDir="false" afterPath="$PROJECT_DIR$/usuarios.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ventana.py" beforeDir="false" afterPath="$PROJECT_DIR$/ventana.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,6 +29,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -40,7 +43,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.ventana">
+  <component name="RunManager" selected="Python.Serpiente (1)">
     <configuration name="Board" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Practica1" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -155,11 +158,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Serpiente (1)" />
         <item itemvalue="Python.ventana" />
         <item itemvalue="Python.usuarios" />
         <item itemvalue="Python.Board" />
         <item itemvalue="Python.Score" />
-        <item itemvalue="Python.Serpiente (1)" />
       </list>
     </recent_temporary>
   </component>
